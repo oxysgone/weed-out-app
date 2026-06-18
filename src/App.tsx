@@ -15,10 +15,10 @@ const COLORS = {
 };
 
 const services = [
-  { id: 1, icon: "🌿", name: "Lawn Mowing", desc: "Clean cuts, clean edges — every visit.", prices: { small: 40, medium: 65, large: 95 } },
-  { id: 2, icon: "✂️", name: "Weed Whacking & Trimming", desc: "Borders, fences, tight spots — handled.", prices: { small: 35, medium: 55, large: 80 } },
-  { id: 3, icon: "🍂", name: "Leaf Cleanup", desc: "Seasonal blowouts and full haul-away.", prices: { small: 50, medium: 80, large: 120 } },
-  { id: 4, icon: "🪓", name: "Full Yard Cleanup", desc: "Overgrowth cleared, yard restored.", prices: { small: 100, medium: 160, large: 240 } },
+  { id: 1, icon: "🌿", name: "Lawn Mowing", desc: "Clean cuts, clean edges — every visit.", prices: { small: 20, medium: 40, large: 120 } },
+  { id: 2, icon: "✂️", name: "Weed Whacking & Trimming", desc: "Borders, fences, tight spots — handled.", prices: { small: 15, medium: 25, large: 50 } },
+  { id: 3, icon: "🍂", name: "Leaf Cleanup", desc: "Seasonal blowouts and full haul-away.", prices: { small: 10, medium: 20, large: 40 } },
+  { id: 4, icon: "🪓", name: "Full Yard Cleanup", desc: "Overgrowth cleared, yard restored.", prices: { small: 60, medium: 120, large: 200 } },
 ];
 
 const yardSizes = [
@@ -305,7 +305,7 @@ export default function WeedOutApp() {
               <button style={btnPrimary}>Send Message →</button>
               <div style={{ marginTop: 28 }}>
                 <p style={{ color: COLORS.muted, fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>Reach Us Directly</p>
-                {[{ icon: "📱", label: "Phone / Text", val: "(773) 000-0000" }, { icon: "📧", label: "Email", val: "weedout.chicago@gmail.com" }, { icon: "📍", label: "Area", val: "Chicago, IL & surrounding areas" }].map(item => (
+                {[{ icon: "📱", label: "Phone / Text", val: "(872) 370 6371" }, { icon: "📧", label: "Email", val: "bookings.weedout@gmail.com" }, { icon: "📍", label: "Area", val: "Chicago, IL & surrounding areas" }].map(item => (
                   <div key={item.label} style={{ ...card, display: "flex", alignItems: "center", gap: 14, marginBottom: 8 }}>
                     <span style={{ fontSize: 22 }}>{item.icon}</span>
                     <div>
@@ -324,7 +324,7 @@ export default function WeedOutApp() {
               <div style={{ fontSize: 64, marginBottom: 16 }}>✅</div>
               <h2 style={{ color: COLORS.green, fontWeight: 900, fontSize: 26, margin: "0 0 10px" }}>Booking Received!</h2>
               <p style={{ color: COLORS.muted, fontSize: 14, lineHeight: 1.7, margin: "0 0 30px" }}>
-                Thanks{form.name ? `, ${form.name.split(" ")[0]}` : ""}! Your booking request has been submitted. We'll confirm your appointment shortly via text or email.
+                Thanks for booking with weedout! Your booking request has been submitted. We'll confirm your appointment shortly via text or email.
               </p>
               {selectedService && (
                 <div style={{ background: COLORS.cardBg, border: `1px solid ${COLORS.border}`, borderRadius: 16, padding: "18px 20px", marginBottom: 24, textAlign: "left" }}>
